@@ -1,0 +1,291 @@
+:root {
+  --white: #ffffff;
+  --dairy: #fcfcfc;
+  --cloud: #f4f4fd;
+  --cornflower: #e7e9fc;
+  --light-slate: #8e8f99;
+  --slate: #434455;
+  --iris: #4d5ae5;
+  --ocean: #404bbf;
+  --navy-blue: #2e2f42;
+  /* --navy-blue-modal: #2E2F42 40%; */
+  /* --grey: #2E2F42 70%; */
+  --green: #31d0aa;
+}
+
+/* common styles */
+body {
+  background-color: var(--white);
+  color: var(--slate);
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding-left: 0;
+}
+
+h3 {
+  color: var(--navy-blue);
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+}
+
+h1,
+h2,
+h3,
+p {
+  margin: 0;
+}
+
+img {
+  display: block;
+}
+
+.link {
+  text-decoration: none;
+}
+
+.link:hover,
+.link:focus {
+  color: var(--ocean);
+}
+
+.container {
+  width: 1158px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.section-title {
+  color: var(--navy-blue);
+  text-align: center;
+  font-family: "Roboto";
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 1.11;
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
+  margin-bottom: 72px;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+/* logo styles */
+.logo {
+  color: var(--iris);
+  font-family: "Raleway", sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  text-transform: uppercase;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+}
+
+.top {
+  margin-right: 76px;
+}
+
+.bottom {
+  display: inline-block;
+  margin-bottom: 16px;
+}
+
+.logo-dark {
+  color: var(--navy-blue);
+}
+
+.logo-light {
+  color: var(--cloud);
+}
+
+/* header styles */
+.page-header {
+  padding: 24px 0;
+  border-bottom: 1px solid var(--cornflower);
+}
+
+.flex {
+  display: flex;
+  justify-content: space-between;
+}
+
+.navigation {
+  display: flex;
+  align-items: center;
+}
+
+.menu {
+  display: flex;
+  gap: 40px;
+}
+
+.nav-link {
+  color: var(--navy-blue);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+}
+
+.contacts {
+  font-style: normal;
+}
+
+.contact-link {
+  color: var(--slate);
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+}
+
+/* main styles */
+.hero {
+  background-color: var(--navy-blue);
+  padding: 188px 0;
+}
+
+.hero-title {
+  color: var(--white);
+  text-align: center;
+  font-size: 56px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 1.07;
+  letter-spacing: 0.02em;
+
+  max-width: 496px;
+  margin: 0 auto 48px;
+}
+
+.hero-btn {
+  background-color: var(--iris);
+  color: var(--white);
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  cursor: pointer;
+
+  display: block;
+  min-width: 169px;
+  height: 56px;
+  border: none;
+  border-radius: 4px;
+  margin: 0 auto;
+}
+
+.hero-btn:hover,
+.hero-btn:focus {
+  background-color: var(--ocean);
+}
+
+.features {
+  padding: 120px 0;
+}
+
+.features-list {
+  display: flex;
+  gap: 24px;
+}
+
+.feature-item {
+  width: calc((100% - 3 * 24px) / 4);
+}
+
+.feature-name {
+  margin-bottom: 8px;
+}
+
+.team {
+  background-color: var(--cloud);
+  padding: 120px 0;
+}
+
+.team-list {
+  display: flex;
+  gap: 24px;
+}
+
+.team-card {
+  background-color: var(--white);
+  width: calc((100% - 3 * 24px) / 4);
+  border-radius: 0px 0px 4px 4px;
+}
+
+.team-staff {
+  padding: 32px 0;
+}
+
+.team-name {
+  text-align: center;
+  margin-bottom: 8px;
+}
+
+.team-position {
+  text-align: center;
+}
+
+.projects {
+  padding: 120px 0;
+}
+
+.projects-list {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 24px;
+  row-gap: 48px;
+}
+
+.project-card {
+  width: calc((100% - 2 * 24px) / 3);
+}
+
+.project-item {
+  padding: 32px 16px;
+  border: 1px solid var(--cornflower);
+  border-top: none;
+}
+
+.project-name {
+  margin-bottom: 8px;
+}
+
+/* footer styles */
+.page-footer {
+  background-color: var(--navy-blue);
+  padding: 100px 0;
+}
+
+.footer-text {
+  color: var(--cloud);
+  max-width: 264px;
+}
