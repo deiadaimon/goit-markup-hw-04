@@ -60,6 +60,16 @@ img {
   color: var(--ocean);
 }
 
+.social-link:hover,
+.social-link:focus {
+  background-color: var(--green);
+}
+
+.team-social-links .social-link:hover,
+.social-link:focus {
+  background-color: var(--ocean);
+}
+
 .container {
   width: 1158px;
   margin: 0 auto;
@@ -126,6 +136,9 @@ img {
 .page-header {
   padding: 24px 0;
   border-bottom: 1px solid var(--cornflower);
+  box-shadow: 0px 1px 6px 0px rgba(46, 47, 66, 0.08),
+    0px 1px 1px 0px rgba(46, 47, 66, 0.16),
+    0px 2px 1px 0px rgba(46, 47, 66, 0.08);
 }
 
 .flex-top {
@@ -175,6 +188,9 @@ img {
     ),
     url(../images/hero-bg-image.jpg);
   background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  max-width: 1440px;
   padding: 188px 0;
 }
 
@@ -306,9 +322,14 @@ img {
 .flex-bottom {
   display: flex;
   justify-content: flex-start;
+  align-items: baseline;
 }
 
 .footer-text {
+  margin-right: 120px;
+}
+
+.footer-desc {
   color: var(--cloud);
   max-width: 264px;
 }
@@ -316,13 +337,12 @@ img {
 .social-media {
   color: var(--white);
   font-weight: 500;
-  margin-left: 120px;
+  margin-bottom: 16px;
 }
 
 .footer-social-links {
   display: flex;
   gap: 16px;
-  margin-top: 16px;
 }
 
 .social-link {
