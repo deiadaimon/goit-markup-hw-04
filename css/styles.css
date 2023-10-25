@@ -265,6 +265,13 @@ img {
   text-align: center;
 }
 
+.team-social-links {
+  display: flex;
+  gap: 24px;
+  justify-content: center;
+  margin-top: 8px;
+}
+
 .projects {
   padding: 120px 0;
 }
@@ -312,8 +319,19 @@ img {
   margin-left: 120px;
 }
 
-.social-links {
+.footer-social-links {
   display: flex;
   gap: 16px;
   margin-top: 16px;
+}
+
+.social-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: var(--iris);
+  color: var(--cloud);
 }
